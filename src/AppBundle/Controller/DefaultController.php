@@ -29,4 +29,12 @@ class DefaultController extends Controller
                                                                 'tags3' => $tags3,
                                                                 'tags4' => $tags4, ));
     }
+
+    /**
+     * @Route("/blog", name="blog")
+     */
+    public function blogAction()
+    {
+        return $this->render('default/blog.html.twig');
+    }
 }
