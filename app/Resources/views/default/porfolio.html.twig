@@ -1,0 +1,169 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+
+<div id="all-posts">
+
+
+      <div class="single-post clearfix">
+        <div class="excerpt">
+          <div class="title">
+            <a href="">
+              E-cebo - Site E-commerce
+            </a>
+          </div>
+          <p class="description">
+            Site de presentation et de vente en ligne des produits de papaterie, vente de livre et service reprographie
+          </p>
+
+          <div class="date">
+                <div class="tag">
+                 <ul >
+                  {% for tag1 in tags1 %}
+                   <li>
+                       <a href="" class="tag__icon social__icon--linkedin " title="symfony2"> {{tag1}}</a>
+                   </li>
+                  {% endfor %}
+
+                 </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+     <div class="single-post clearfix">
+        <div class="excerpt">
+          <div class="title">
+            <a href="http://choralechoeurdejoie.herokuapp.com/">
+              Chorale choeur de joie  - <span class="link-site"> <i class="fa fa-globe"> choralechoeurdejoie.com </i> </span>
+
+            </a>
+          </div>
+
+          <p class="description">
+          Site web developpé et consu pour une choral de la proisse du puteaux de presentation  pour une choral
+          </p>
+
+          <div class="date">
+            <div class="tag">
+                 <ul >
+                  {% for tag2 in tags2 %}
+                     <li>
+                       <a href="" class="tag__icon social__icon--linkedin " title="symfony2"> {{tag2}}</a>
+                   </li>
+                  {% endfor %}
+
+
+                 </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="single-post clearfix">
+        <div class="excerpt">
+          <div class="title">
+            <a href="http://choralechoeurdejoie.herokuapp.com/">
+              Decod'Age - <span class="link-site"> <i class="fa fa-mobile"> Application mobile hybride</i> </span>
+
+            </a>
+          </div>
+
+          <p class="description">
+         développement d'une application hybride avec Apache-Cordova en collaboration avec CNR sante de Nice
+          </p>
+
+          <div class="date">
+            <div class="tag">
+                 <ul >
+                  {% for tag3 in tags3 %}
+                     <li>
+                       <a href="" class="tag__icon social__icon--linkedin "> {{tag3}}</a>
+                   </li>
+                  {% endfor %}
+                 </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+       <div class="single-post clearfix">
+        <div class="excerpt">
+          <div class="title">
+            <a href="http://choralechoeurdejoie.herokuapp.com/">
+              I Wheel Share & Change ta ville - <span class="link-site"> <i class="fa fa-globe"> Iwheelshare.com | changetaville.com </i>  </span>
+
+            </a>
+          </div>
+
+          <p class="description">
+          Participation au developpement de la phase front et back de les deux projets Iwheelshare et ma ville
+          </p>
+
+          <div class="date">
+            <div class="tag">
+                 <ul >
+                   {% for tag4 in tags4 %}
+                      <li>
+                       <a href="" class="tag__icon social__icon--linkedin " title="symfony2"> {{tag4}}</a>
+                   </li>
+                   {% endfor %}
+                 </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+       <div class="single-post clearfix">
+        <div class="excerpt">
+          <div class="title">
+            <a href="">
+             Hackathon Chabadabadaweek
+            </a>
+          </div>
+          <p class="description">
+            -  WeAreLeka <br>
+               &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;Développement du MVP du projet qui à pour but d'aider les parents à suivre les progrés de leur enfant atteint de la maladie d'autisme <br>
+          </p>
+
+          <div class="date">
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+       <div class="single-post clearfix">
+        <div class="excerpt">
+          <div class="title">
+            <a href="">
+             Formatrice
+            </a>
+          </div>
+          <p class="description">
+            - Wifilles | Fondation Agir Contre L'Exclusion 93 <br>
+               &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;Initiation des lycéenne et des collégienne à la programmation web  <br>
+            - Silicon Vallois - Ministère de la culture <br>
+                &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;Journée d'initiation d'un public jeune  eloigné du numérique à la programmation web <br>
+            - ADIE | association pour le droit à l'initiative économique <br>
+              &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Initiation des porteurs de projets à l'utiistaion du CMS Spacesquare
+          </p>
+
+          <div class="date">
+
+          </div>
+        </div>
+      </div>
+
+
+
+</div>
+{% endblock %}
