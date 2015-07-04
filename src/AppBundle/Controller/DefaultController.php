@@ -37,4 +37,12 @@ class DefaultController extends Controller
     {
         return $this->render('default/blog.html.twig');
     }
+
+     /**
+     * @Route("/article1/1", name="article1")
+     */
+    public function Article1Action()
+    {
+        return $this->render('default/Article1.html.twig');
+    }
 }
