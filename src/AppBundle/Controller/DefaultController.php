@@ -49,7 +49,7 @@ class DefaultController extends Controller
     /**
      * @Route("/article/2", name="article/2")
      */
-    public function Article1Action()
+    public function Article2Action()
     {
         return $this->render('default/article2.html.twig');
     }
@@ -57,8 +57,8 @@ class DefaultController extends Controller
     /**
      * @Route("/article/3", name="article/3")
      */
-    public function Article1Action()
+    public function Article3Action()
     {
-        return $this->render('default/article.html.twig');
+        return $this->render('default/article3.html.twig');
     }
 }
