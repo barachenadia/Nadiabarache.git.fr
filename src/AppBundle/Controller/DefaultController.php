@@ -43,6 +43,6 @@ class DefaultController extends Controller
      */
     public function Article1Action()
     {
-        return $this->render('default/Article1.html.twig');
+        return $this->render('default/article1.html.twig');
     }
 }
