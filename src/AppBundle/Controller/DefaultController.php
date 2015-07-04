@@ -39,7 +39,7 @@ class DefaultController extends Controller
     }
 
      /**
-     * @Route("/article1/1", name="article1")
+     * @Route("/article1/1", name="article1/1")
      */
     public function Article1Action()
     {
