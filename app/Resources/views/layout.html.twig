@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %} Nadia barache - blog{% endblock %}</title>
+        {% block stylesheets %}
+        <meta name="description" content="{%  block Description %} {%  endblock %}">
+        <link rel="stylesheet" href="{{ asset('css/reset.css') }}" />
+
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:300" />
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+        <link rel="stylesheet" href="{{ asset('font-awesome/css/font-awesome.min.css') }}" />
+        {% endblock %}
+    </head>
+    <body>
+       <div class="menu" tabindex="0">
+           <div class="smartphone-menu-trigger"></div>
+           <header class="avatar">
+              <img src="{{ asset('nadia_barache.jpg') }}" />
+              <h2>Nadia BARACHE</h2>
+              <div class="metier">Ingénieur Etude et Développement web</div>
+
+            </header>
+            <div class="social">
+                 <ul >
+                   <li>
+                       <a href="" class="social__icon social__icon--linkedin fa fa-linkedin" title="Linkedin"></a>
+                   </li>
+                       <a href="#" class="social__icon social__icon--twitter fa fa-github" title="github"></a>
+                   <li>
+                   <li>
+                       <a href="#" class="social__icon social__icon--download fa fa-download" title="cv-pdf"></a>
+                   </li>
+
+                 </ul>
+              </div>
+        </div>
+
+
+    <main>
+   <nav class="nav-bar">
+     <div class="handle">Menu</div>
+     <ul>
+       <li><a href="">About</a></li>
+       <li><a href="">Porfolio</a></li>
+       <li><a href="">Blog</a></li>
+       <li><a href="">Contact</a></li>
+     </ul>
+   </nav>
+
+
+        {% block body %}
+
+        {% endblock %}
+        {% block javascripts %}
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+       <script src="{{ asset('js/index.js') }}"></script>
+
+
+        {% endblock %}
+    </body>
+</html>
