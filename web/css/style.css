@@ -426,7 +426,14 @@ p {
 .single-post .title em{
   display: none;
 }
-
+.titre{
+  color : #C8962D ;
+  font-weight: bold;
+}
+.sutitre {
+   color : #C8962D ;
+  font-weight: bold;
+}
 .single-post .excerpt{
   float: left;
   padding: 40px 48px;
